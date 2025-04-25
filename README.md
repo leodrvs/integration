@@ -45,7 +45,6 @@
 2. Отправляйте GET-запросы на `/int_api/get/{идентификатор_запроса}`
 
 #### Пример на Python:
-
 ```python
 import httpx
 import asyncio
@@ -59,6 +58,7 @@ async def get_1c_data():
         return response.json() if response.status_code == 200 else None
 
 data = asyncio.run(get_1c_data())
+```
 
 ## Установка
 - Добавьте подсистему в свою конфигурацию
